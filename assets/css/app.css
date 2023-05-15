@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+    --white: #fff;
+    --platinum: #E8EBE4;
+    --gray: #BEc1bb;
+    --blue-bell: #A491D2;
+    --soap: #CDC3E6;
+    --pale-lavender: #D4DCFF;
+    --dark-jungle: #1B1F21;
+    --outer-space: #444749;
+    --old-silver: #828485;
+
+    /* Color del fondo segun diseno */
+    --chat-background: rgba(248, 248, 248);
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* menu */
+
+.menu__container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: var(--gray);
+    border-style: solid;
+    padding: 0 40px 0 80px;
+}
+
+.user__status {
+    display: flex;
+}
+
+.menu__image {
+    display: flex;
+    align-items: center;
+}
+
+.menu__image img {
+    max-height: 50px;
+    border-radius: 100%;
+}
+
+.menu__data {
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* :first-child selecciona la primera p que existe dentro de .menu__data */
+.menu__data p:first-child {
+    font-size: 20px;
+    color: black;
+}
+
+.menu__data p {
+    font-size: 14px;
+    color: var(--gray);
+    margin: 0;
+    padding: 0;
+}
+
+.menu__icons {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.menu__icons i {
+    margin-left: 15px;
+    color: var(--old-silver);
+}
+
+/* Contactos */
+
+.sidebar {
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 0 30rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    display: flex;
+}
+
+.contact__container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    border-top: 1px;
+    border-color: var(--gray);
+    border-style: solid;
+}
+
+.contact__image {
+    display: flex;
+    align-items: center;
+}
+
+.contact__image img {
+    max-height: 80px;
+    border-radius: 100%;
+}
+
+.contact__data {
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* :first-child selecciona la primera p que existe dentro de .contact__data */
+.contact__data p:first-child {
+    font-size: 20px;
+}
+
+.contact__data p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.button__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.button__container .button {
+    background-color: var(--blue-bell);
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* agregar 0.3 segundos a todas las transiciones */
+    transition: all 0.3s ease;
+}
+
+/* cambia color al poner el cursor encima */
+.button__container .button:hover {
+    background-color: var(--soap);
+}
+
+/* Chat */
+
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    background-color: var(--chat-background);
+}
+
+.chat__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 45rem;
+}
+
+.chat__box__image img {
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+.chat__box__text {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat__box__text h1 {
+    margin: 1.5rem 0 0;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.chat__box__message {
+    max-width: 43rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+}
